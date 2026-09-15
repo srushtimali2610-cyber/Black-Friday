@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+.font-Kaushan {
+    font-family: "Kaushan Script", cursive;
+    color:#FF4955;
+}
+.gothic{
+    font-family: "League Gothic", sans-serif;
+    
+}

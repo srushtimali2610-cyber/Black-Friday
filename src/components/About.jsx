@@ -11,12 +11,6 @@ const About = () => {
                      <div className="mt-10 mx-4 md:mx-20 bg-[url(https://websitedemos.net/black-friday-04/wp-content/uploads/sites/1419/2023/11/about-02.jpg)] min-h-[500px] md-h-160 bg-bg-cover bg-enter relative bg-fixed ">
                      
                      </div>
-{/* 
-                     <div className="mt-10 mx-4 md:mx-20 bg-[url(https://img.freepik.com/premium-photo/woman-listening-music-while-relaxing-forest_1048944-609671.jpg)] min-h-[500px] md:h-160 bg-cover bg-center relative bg-fixed">
-            <div className="bg-black/70 h-full w-full py-20 px-4 md:px-20">
-              <div className="font-Kaushan mt-15 text-2xl md:text-3xl font-semibold text-[#ff4955]">
-                What Our Clients Say
-              </div> */}
                 </div>
             </div>
         </>

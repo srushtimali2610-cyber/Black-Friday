@@ -67,20 +67,20 @@ const Home = () => {
           </div>
           <Button text={"set reminder"} />
 
-          <div className="flex gap-10 mt-20">
-            <div className="border border-white w-60 h-60 flex flex-col justify-center items-center gap-1 text-white uppercase">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 px-16 w-full gap-10 mt-20">
+            <div className="border border-white  h-60 flex flex-col justify-center items-center gap-1 text-white uppercase">
               <p className="gothic text-9xl">{timerDays}</p>
               <p className="">days</p>
             </div>
-            <div className="border border-white w-60 h-60 flex flex-col justify-center items-center gap-1 text-white uppercase">
+            <div className="border border-white h-60 flex flex-col justify-center items-center gap-1 text-white uppercase">
               <p className="gothic text-9xl">{timerHours}</p>
               <p className="">hours</p>
             </div>
-            <div className="border border-white w-60 h-60 flex flex-col justify-center items-center gap-1 text-white uppercase">
+            <div className="border border-white h-60 flex flex-col justify-center items-center gap-1 text-white uppercase">
               <p className="gothic text-9xl">{timerMinutes}</p>
               <p className="">minutes</p>
             </div>
-            <div className="border border-white w-60 h-60 flex flex-col justify-center items-center gap-1 text-white uppercase">
+            <div className="border border-white h-60 flex flex-col justify-center items-center gap-1 text-white uppercase">
               <p className="gothic text-9xl">{timerSeconds}</p>
               <p className="">seconds</p>
             </div>
@@ -88,7 +88,7 @@ const Home = () => {
         </div>
         <div className="bg-black py-10">
           <div className=" mx-4 md:mx-20 bg-[url(https://websitedemos.net/black-friday-04/wp-content/uploads/sites/1419/2023/11/bg-006.jpg)] bg-center bg-cover min-h-[500px] md:h-auto overflow-hidden">
-            <div className='flex gap-1 py-20'>
+            <div className='flex flex-col sm:flex-col md:flex-row gap-1 py-20'>
               <div className="w-180 px-10">
                 <p className='font-Kaushan text-3xl'>
                   Up to 50% Off
@@ -112,8 +112,8 @@ const Home = () => {
           </div>
 
           <div className="mt-20 w-full">
-            <div className="flex gap-4">
-              <div className="w-135 h-100 ml-20">
+            <div className="flex sm:flex-col-reverse sm:items-center md:flex-row  gap-4">
+              <div className="w-135  ml-20">
                 <div className='font-Kaushan text-2xl md:text-3xl'>Black Friday Exclusive</div>
                 <div className=" gothic text-4xl md:text-7xl uppercase mt-5 text-white leading-tight">
                   Save big: <span className='text-[#FF4955]'>Up to 75%</span> <br />
@@ -126,10 +126,10 @@ const Home = () => {
                   <Button text={"SHOP NOW"} />
                 </div>
               </div>
-              <div className="w-40 h-45 mt-27">
+              <div className="w-40 h-45 mt-27 sm:hidden md:block">
                 <img src="https://websitedemos.net/black-friday-04/wp-content/uploads/sites/1419/2023/11/image.jpg" alt="" className='rounded-sm h-full' />
               </div>
-              <div className="w-100 h-100">
+              <div className="w-100">
                 <img src="https://websitedemos.net/black-friday-04/wp-content/uploads/sites/1419/2023/11/headphones-img-02.jpg" alt="" className='rounded-sm' />
               </div>
             </div>
@@ -142,7 +142,7 @@ const Home = () => {
             Black Friday Madness is Here!
           </div>
 
-          <div className="mt-20 grid grid-cols-4 gap-7 px-25">
+          <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 px-25">
             {Data.slice(0, 4).map((item) => {
               return (
                 <Products item={item} />
@@ -167,16 +167,16 @@ const Home = () => {
             </div>
           </div>
 
-          <div className='mt-20 flex px-20 mb-30'>
-            <div className="w-140"></div>
-            <div className="w-140">
+          <div className='mt-20 grid grid-cols-2 px-20 mb-30'>
+            <div className=""></div>
+            <div className="">
               <div className="font-Kaushan text-2xl">Why Choose BlackFridayShop?</div>
               <div className="gothic uppercase text-7xl mt-5 text-white">
                 the joy of shopping <br /> at its best
               </div>
               <div className='gap-10 grid grid-cols-2 mt-10'>
 
-                <div className="w-60  text-white">
+                <div className="  text-white">
 
                   <FaTruck className='text-4xl mb-4' />
                   <p className='uppercase gothic text-xl md:text-2xl'>Free Shipping</p>
@@ -192,7 +192,7 @@ const Home = () => {
                   </div>
                 </div>
 
-                <div className="w-60 text-white">
+                <div className=" text-white">
 
                   <FaLock className='text-4xl mb-4' />
                   <p className='uppercase gothic text-xl md:text-2xl'>Secure Payments</p>
@@ -223,11 +223,11 @@ const Home = () => {
                 Customer testimonials
               </div>
               <div className="grid grid-cols-2 gap-10">
-                <div className='w-120'>
+                <div className=''>
                   <div className="flex text-2xl text-[#F0AD4E]">
                     <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
                   </div>
-                  <div className="mt-5 font-semibold text-gray-300 max-w-md mx-auto md:mx-0">
+                  <div className="mt-5 font-semibold text-gray-300 max-w-md md: mx-auto md:mx-0">
                     "I couldn't be happier with my Black Friday Shop experience. <br />
                     The deals were incredible, and the quality of the products I <br />
                     purchased exceeded my expectation."
@@ -235,7 +235,7 @@ const Home = () => {
                   <div className="mt-5 font-bold text-white">James Oliver</div>
                 </div>
 
-                <div className='w-120'>
+                <div className=''>
                   <div className="flex text-2xl text-[#F0AD4E]">
                     <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
                   </div>
@@ -267,7 +267,7 @@ const Home = () => {
               <div className='mt-10'>
                 <Button text={"SHOP DEALS"} />
               </div>
-              <div className="border-b border-gray-800 ml-50 mt-20 w-220 "></div>
+              <div className="border-b border-gray-800 mt-20 mx-20 "></div>
 
             </div>
           </div>

@@ -11,7 +11,7 @@ const Footer = () => {
         <>
             <div className="bg-black mt-[-100px] pb-10">
                 <div className="border-b border-gray-800"></div>
-                <div className="grid grid-cols-4 px-20 gap-10 mt-20">
+                <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 justify-between px-5 xs:px-20 gap-30 sm:gap-10 mt-20">
                     <div className=" h-60 ">
                         <img src="https://websitedemos.net/black-friday-04/wp-content/uploads/sites/1419/2023/11/logo-me.svg" alt="" />
                         <div className="text-gray-400 leading-relaxed mt-3">
@@ -79,19 +79,19 @@ const Footer = () => {
                         Newsletter
                         </div>
                         <div className="text-gray-400 leading-relaxed mt-3">
-                           Subscribe to get the latest <br />
+                           Subscribe to get the latest
                             update on sales and exclusive offers.
                         </div>
-                        <input type="email" placeholder='Your Email Address' className='w-55 px-10 py-3 text-gray-400 border border-gray-800 hover:border-[#ff4955] bg-gray-900 mt-5 rounded-sm' />
+                        <input type="email" placeholder='Your Email Address' className='w-full px-10 py-3 text-gray-400 border border-gray-800 hover:border-[#ff4955] bg-gray-900 mt-5 rounded-sm' />
                         <div className='mt-5'>
-                            <Button text={"SUBSCRIBE"} wid={"w-55"} />
+                            <Button text={"SUBSCRIBE"} wid={"w-full"} />
                         </div> 
                     </div>
                 </div>
-                <div className="border-b mt-15 border-gray-800 w-270 ml-20"></div>
-                <div className='flex gap-110 text-gray-600 text-sm mt-10 px-20'>
+                <div className="border-b mt-15 border-gray-800 w-[90%] m-auto"></div>
+                <div className='flex flex-col items-center gap-5 text-center  md:flex-row  justify-between text-gray-600 text-sm mt-10 px-20'>
                     <div>© 2024 Black Friday Store. All Rights Reserved.</div>
-                    <div className='flex gap-10'>
+                    <div className='flex  gap-10'>
                         <div>Privacy Policy</div>
                         <div>Terms of Service</div>
                         <div>Cookie Policy</div>

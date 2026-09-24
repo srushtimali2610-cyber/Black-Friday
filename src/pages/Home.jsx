@@ -178,14 +178,14 @@ const Home = () => {
 
                 <div className="  text-white">
 
-                  <FaTruck className='text-4xl mb-4' />
+                  <FaTruck className='text-4xl mb-4 text-[#FF4955]' />
                   <p className='uppercase gothic text-xl md:text-2xl'>Free Shipping</p>
                   <div className="mt-3 text-gray-400 max-w-[240px] mb-8">
                     Delight in seamless free shipping, enhancing your shopping experience.
                   </div>
 
 
-                  <FaLocationDot className='text-4xl mb-4' />
+                  <FaLocationDot className='text-4xl mb-4 text-[#FF4955]' />
                   <p className='uppercase gothic text-xl md:text-2xl'>Order Tracking</p>
                   <div className="mt-3 text-gray-400 max-w-[240px] mb-8">
                     Track your order effortlessly with our streamlined system.
@@ -194,24 +194,21 @@ const Home = () => {
 
                 <div className=" text-white">
 
-                  <FaLock className='text-4xl mb-4' />
+                  <FaLock className='text-4xl mb-4 text-[#FF4955]' />
                   <p className='uppercase gothic text-xl md:text-2xl'>Secure Payments</p>
                   <div className="mt-3 text-gray-400 max-w-[240px] mb-13">
                     Shop with confidence using our secure payment methods.
                   </div>
 
 
-                  <IoMdRefresh className='text-4xl mb-4' />
+                  <IoMdRefresh className='text-4xl mb-4 text-[#FF4955]' />
                   <p className='uppercase gothic text-xl md:text-2xl'>Order Tracking</p>
                   <div className="mt-3 text-gray-400 max-w-[240px] mb-8">
                     Celebrate worry-free shopping with our hassle-free returns.
                   </div>
                 </div>
-
               </div>
-
             </div>
-
           </div>
 
           <div className="mt-10 mx-4 md:mx-20 bg-[url(https://img.freepik.com/premium-photo/woman-listening-music-while-relaxing-forest_1048944-609671.jpg)] min-h-[500px] md:h-160 bg-cover bg-center relative bg-fixed">
